@@ -39,7 +39,7 @@
   width: 38rem;
   padding: 1.5rem 2.1rem;
 }
-.footer__subscribe-form .btn {
+.btn-subscribe {
   display: flex;
   align-items: center;
   gap: 0.3rem;

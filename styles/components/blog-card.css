@@ -1,0 +1,24 @@
+.post-card {
+  display: flex;
+  gap: 2rem;
+}
+.post__txt-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.post__author-info {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: var(--font-j);
+}
+.post__author-name {
+  font-size: 1rem;
+}
+.post__date {
+  font-size: 0.9rem;
+}
+.post-card .btn {
+  padding: 0.9rem 3.4rem;
+}
