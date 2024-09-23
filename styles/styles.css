@@ -1,9 +1,9 @@
 @import "./general.css";
 @import "./components/header.css";
 @import "./components/footer.css";
-@import "./components/blog-card.css";
+@import "./components/post-card.css";
 @import "./pages/home-page.css";
-@import "./pages/article-page.css";
+@import "./pages/post-page.css";
 
 /**************************/
 /* BELOW 1344px (Smaller desktops) */

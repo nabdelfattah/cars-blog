@@ -2,24 +2,29 @@
   display: flex;
   gap: 2rem;
 }
-.post__img {
+.post-card__img {
   display: block;
 }
-.post__txt-wrapper {
+.post-card__txt-wrapper {
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
 }
-.post__author-info {
+.post-card__author-info {
   display: flex;
   align-items: center;
   gap: 0.6rem;
   font-family: var(--font-j);
 }
-.post__author-name {
+.post-card__author-img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+.post-card__author-name {
   font-size: 1rem;
 }
-.post__date {
+.post-card__date {
   font-size: 0.9rem;
 }
 .post-card .btn {
