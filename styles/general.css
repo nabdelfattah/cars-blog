@@ -1,0 +1,143 @@
+/* variables */
+:root {
+  --color-primary: #cc4747;
+  --color-primary-hover: #e65050;
+  --color-white: #fff;
+  --color-black-title: #000;
+  --color-black: #232536;
+  --color-gray: #6d6e76;
+  --color-dark-gray: #161722;
+  --bg-gray: #31323c;
+  --bg-lila: #f4f0f8;
+
+  --font-p: "Poppins", sans-serif;
+  --font-i: "Inter", sans-serif;
+  --font-j: "Plus Jakarta Sans", sans-serif;
+
+  --radius-5: 5px;
+  --radius-10: 10px;
+
+  --txt-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  --txt-bolder: 0.5px 0px 0px currentColor;
+
+  --timing-animation: 0.3s;
+}
+/* //////////////////////////////////////////// */
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.3rem rgba(255, 89, 89, 0.5);
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 10rem;
+}
+body {
+  font-family: var(--font-p);
+  font-size: 1.6rem;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+a {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+  transition: all var(--timing-animation);
+}
+ul,
+ol {
+  list-style: none;
+}
+button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+/* //////////////////////////////////////// */
+.container {
+  width: 100%;
+  max-width: 118rem;
+  margin: 0 auto;
+}
+.grid {
+  display: grid;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.heading-primary {
+  font-size: 4.8rem;
+  color: var(--color-black-title);
+  text-shadow: var(--txt-shadow);
+}
+.heading-secondary {
+  /* @include heading; */
+}
+.heading-tertiary {
+  /* @include heading; */
+}
+.description {
+  font-size: 1.6rem;
+}
+.btn {
+  font-size: 1.4rem;
+  font-weight: 700;
+  border-radius: var(--radius-5);
+  transition: all var(--timing-animation);
+}
+.btn-primary,
+.btn-primary:link,
+.btn-primary:visited {
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  transition: var(--timing-animation);
+}
+.btn-primary:hover,
+.btn-primary:active {
+  background-color: var(--color-primary-hover);
+  box-shadow: 0 0 0 #fff;
+}
+.btn-secondary:link,
+.btn-secondary:visited {
+  color: var(--color-black);
+  background-color: var(--color-white);
+  transition: var(--timing-animation);
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.btn-secondary:hover,
+.btn-secondary:active {
+  color: var(--color-white);
+}
+.btn-secondary::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  background-color: var(--color-primary);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
+}
+.btn-secondary:hover::before {
+  transform: scaleX(1);
+}
+/* //////////////////////////////////////// */
