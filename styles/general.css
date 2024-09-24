@@ -176,3 +176,33 @@ button {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--color-primary-hover);
 }
+/***************/
+/* RESPONSIVE */
+/*************/
+/* BELOW 1200px (Landscape Tablets) */
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+/* BELOW 960px (Tablets) */
+@media (max-width: 60em) {
+  html {
+    font-size: 50%;
+  }
+  .btn-secondary {
+    padding: 2rem;
+  }
+  .heading-primary,
+  .heading-primary--v2 {
+    font-size: 4rem;
+  }
+  .heading-secondary {
+    font-size: 3rem;
+    padding-bottom: 1rem;
+  }
+  .heading-tertiary {
+    font-size: 2rem;
+  }
+}

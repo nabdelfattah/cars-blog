@@ -33,6 +33,9 @@
 .post-card .btn {
   padding: 0.9rem 3.4rem;
 }
+/***************/
+/* RESPONSIVE */
+/*************/
 @media (max-width: 44em) {
   .post-card {
     flex-direction: column;

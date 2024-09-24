@@ -60,6 +60,9 @@
   display: block;
 }
 
+/***************/
+/* RESPONSIVE */
+/*************/
 @media (max-width: 60em) {
   .footer__subscribe {
     flex-direction: column;

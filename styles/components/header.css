@@ -60,6 +60,9 @@
   left: 0;
 }
 
+/***************/
+/* RESPONSIVE */
+/*************/
 @media (max-width: 60em) {
   .header .nav-link.btn {
     padding: 1rem 3rem;
