@@ -4,6 +4,9 @@
 }
 .post-card__img {
   display: block;
+  width: 100%;
+  max-width: 48rem;
+  height: auto;
 }
 .post-card__txt-wrapper {
   display: flex;
@@ -29,4 +32,17 @@
 }
 .post-card .btn {
   padding: 0.9rem 3.4rem;
+}
+@media (max-width: 44em) {
+  .post-card {
+    flex-direction: column;
+    padding: 3rem;
+    box-shadow: 0.4rem 0.5rem 0.8rem rgba(0, 0, 0, 0.11);
+    border-radius: var(--radius-10);
+    background: linear-gradient(
+      to bottom right,
+      var(--color-white),
+      var(--bg-lila)
+    );
+  }
 }

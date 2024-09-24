@@ -50,6 +50,7 @@ body {
   font-size: 1.6rem;
   font-weight: 400;
   overflow-x: hidden;
+  position: relative; /* fix the overflow issue*/
 }
 a {
   display: inline-block;
@@ -76,12 +77,13 @@ button {
   width: 100%;
   max-width: 118rem;
   margin: 0 auto;
+  padding: 0rem 2rem;
 }
 .grid {
   display: grid;
 }
 .grid--2-cols {
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, auto);
 }
 .heading-primary {
   color: var(--color-white);
