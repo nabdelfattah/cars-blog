@@ -30,7 +30,8 @@
   .btn-secondary {
     padding: 2rem;
   }
-  .heading-primary {
+  .heading-primary,
+  .heading-primary--v2 {
     font-size: 4rem;
   }
   .heading-secondary {
